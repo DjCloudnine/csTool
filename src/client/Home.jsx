@@ -12,7 +12,9 @@ function App() {
     'Item Look Up': lazy(() => import('./ItemLookup')),
     'RMA Look Up': lazy(() => import('./RMALookup')),
     'Amazon Refund': lazy(() => import('./AmazonRefund')),
-    'Links': lazy(() => import('./Links'))
+    'Links': lazy(() => import('./Links')),
+    'Tasks': lazy(() => import('./Tasks')),
+    'Call': lazy(() => import('./Call'))
   };
 
   const Component = components[selectedMenuItem];
@@ -28,6 +30,8 @@ function App() {
           <li onClick={() => handleMenuItemClick('RMA Look Up')}>RMA Look Up</li>
           <li onClick={() => handleMenuItemClick('Amazon Refund')}>Amazon Refund</li>
           <li onClick={() => handleMenuItemClick('Links')}>Links</li>
+          <li onClick={() => handleMenuItemClick('Tasks')}>Task</li>
+          <li onClick={() => handleMenuItemClick('Call')}>Call</li>
         </ul>
       </nav>
       <div>
